@@ -39,7 +39,7 @@ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 kubectl version --client
 ```
 
-#S3 
+# S3 
 
 ```create a bucke3 named  -> devops-kops-bucket-789```
 
