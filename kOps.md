@@ -7,7 +7,7 @@ Now do the following steps in that instance : -
 
 
 
-# install cops in AWS 
+# install kOps in AWS 
 
 ```sudo snap install aws-cli --classic```
 
