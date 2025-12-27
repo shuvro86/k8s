@@ -93,4 +93,4 @@ kubectl get no
 kops delete cluster --name=kubevro.headwaydevops.dpdns.org --state=s3://devops-kops-bucket-789 --yes
 ```
 
-# Note: If needed again, just run the main 2 command (i.e kops create and update) to provision necessary setup for kops cluster.   
+# Note: If needed again, just run the main 2 command (i.e kops create and update) to provision necessary setup for kops cluster. Also don't forget to stop the kops instance running in AWS.
