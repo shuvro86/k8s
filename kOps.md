@@ -1,8 +1,5 @@
 
-```kOps (Kubernetes Operations) is an open-source command-line tool that automates the deployment, management, and upgrading of production-grade, highly available Kubernetes clusters.```
-
-
-
+kOps (Kubernetes Operations) is an open-source command-line tool that automates the deployment, management, and upgrading of production-grade, highly available Kubernetes clusters.
 
 Run a simple free tier ec2 named kops in AWS. 
 
@@ -85,12 +82,15 @@ kops update cluster --name=kubevro.headwaydevops.dpdns.org --state=s3://devops-k
 ```
 
 
-To check : 
+To check  
 ```
 kops validate cluster --name=kubevro.headwaydevops.dpdns.org --state=s3://devops-kops-bucket-789
 kubectl get no
 ```
-Delete: 
-```kops delete cluster --name=kubevro.headwaydevops.dpdns.org --state=s3://devops-kops-bucket-789 --yes```
+Delete 
 
-#Note: If needed again, just run the main 2 command (i.e kops create and update) to provision necessary setup for kops cluster.   
+```
+kops delete cluster --name=kubevro.headwaydevops.dpdns.org --state=s3://devops-kops-bucket-789 --yes
+```
+
+###Note: If needed again, just run the main 2 command (i.e kops create and update) to provision necessary setup for kops cluster.   
