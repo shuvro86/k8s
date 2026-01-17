@@ -1,3 +1,6 @@
+![Uploading WhatsApp Image 2026-01-18 at 1.28.41 AM.jpeg…]()
+
+
 `$ cat pod_vproapp.yaml`
 ```
 apiVersion: v1
