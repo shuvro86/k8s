@@ -1,0 +1,33 @@
+`$ cat pod_vproapp.yaml`
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: vproapp
+  labels:
+    app: vproapp
+spec:
+  containers:
+      - name: appcontainer
+        image: imranvisualpath/freshtomapp:V7
+        ports:
+        - name: vproapp-port
+          containerPort: 8080
+```
+
+
+`$ cat svc_vproapp.yaml`
+```apiVersion: v1
+kind: Service
+metadata:
+  name: helloworld-service
+spec:
+  type: NodePort
+  selector:
+    app: vproapp
+  ports:
+    - protocol: TCP
+      port: 8090
+      targetPort: 8080
+      nodePort: 30001
+```
