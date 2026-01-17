@@ -1,6 +1,6 @@
+![WhatsApp Image 2026-01-18 at 1 28 41 AM](https://github.com/user-attachments/assets/8c304d33-bfe8-4616-9256-06c6af8b622e)
 
 
-![Architecture diagram](WhatsApp Image 2026-01-18 at 1.28.41 AM.jpeg)
 
 `$ cat pod_vproapp.yaml`
 ```
