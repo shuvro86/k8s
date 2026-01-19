@@ -16,5 +16,5 @@ sudo systemctl restart containerd
 sudo systemctl restart kubelet
 ```
 
-Run the output of Join Command from master into worker node : 
+Finally, Run the output of Join Command from master into worker node : 
 `kubeadm token create --print-join-command`
