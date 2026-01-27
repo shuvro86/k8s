@@ -34,7 +34,8 @@ roleRef:
 ```
   
   
-vi general.yaml
+`vi general.yaml`
+```
 apiVersion: v1
 kind: ServiceAccount
 metadata:
@@ -68,10 +69,11 @@ roleRef:
   kind: ClusterRole
   name: general-role
   apiGroup: rbac.authorization.k8s.io  
+```  
   
   
-  
-vi other.yaml
+`vi other.yaml`
+```
 apiVersion: v1
 kind: ServiceAccount
 metadata:
@@ -98,27 +100,28 @@ subjects:
 roleRef:
   kind: ClusterRole
   name: other-role
-  apiGroup: rbac.authorization.k8s.io  
+  apiGroup: rbac.authorization.k8s.io
+```
   
   
   
   
-From Master Node, now apply the files from : 
-
+### From Master Node, now apply the files from : 
+```
 kubectl apply -f admin.yaml
 kubectl apply -f general.yaml
 kubectl apply -f other.yaml  
+```
 
 
 
 
-
-From Master Node, a short-lived, temporary authentication token for a specific ServiceAccount : 
-
+### From Master Node, a short-lived, temporary authentication token for a specific ServiceAccount : 
+```
 kubectl create token admin
 kubectl create token general
 kubectl create token other
-
+```
 
 
 
