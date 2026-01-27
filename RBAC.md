@@ -1,9 +1,9 @@
 # From Master Node, Create three serviceAccountn, ClusterRole, ClusterRoleBinding : 
 
 
-'vi admin.yaml'
+`vi admin.yaml`
 
-'''
+```
 apiVersion: v1
 kind: ServiceAccount
 metadata:
@@ -31,7 +31,7 @@ roleRef:
   kind: ClusterRole
   name: admin-role
   apiGroup: rbac.authorization.k8s.io
-'''  
+```
   
   
 vi general.yaml
