@@ -126,11 +126,11 @@ kubectl create token other
 
 
 
-This is grabbed from /.kube/config file of master node. 
-We have to make 3 different config files whcih should be kept in other machine where the individual admin or general or other user will try for authentication and authorization :
-So, the below files needs to be edited which carry the tokens to access the cluster. 
+### This is grabbed from /.kube/config file of master node. 
+### We have to make 3 different config files whcih should be kept in other machine where the individual admin or general or other user will try for authentication and authorization, So, the below files needs to be edited which carry the tokens to access the cluster. 
 
-
+`cat ~/.kube/config`
+```
 apiVersion: v1
 kind: Config
 clusters:
@@ -148,7 +148,7 @@ users:
 - name: admin
   user:
     token: <OUTPUT OF kubectl create token admin/geberal/token>
-	
+```	
 	
 	
 Before this,please ensure whether the kubectl command should be run from those machines : 
