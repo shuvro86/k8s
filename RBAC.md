@@ -159,8 +159,9 @@ users:
 ```	
 
 	
-### Now check the necessary access after login to the machine: 
+### Now check the necessary access after login to the user machine: 
 
 `kubectl auth can-i delete pods`
+
 `O/P: Yes/No` 
 
