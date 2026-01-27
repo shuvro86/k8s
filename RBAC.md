@@ -1,4 +1,4 @@
-### From Master Node, Create three serviceAccountn, ClusterRole, ClusterRoleBinding : 
+### From Master Node, Create three serviceAccount, ClusterRole, ClusterRoleBinding : 
 
 
 `vi admin.yaml`
@@ -126,7 +126,7 @@ kubectl create token other
 
 
 
-### This is grabbed from /.kube/config file of master node. 
+### This below file grabbed from ~/.kube/config file of master node. 
 ### We have to make 3 different config files whcih should be kept in other machine where the individual admin or general or other user will try for authentication and authorization, So, the below files needs to be edited which carry the tokens to access the cluster. 
 
 `cat ~/.kube/config`
@@ -151,16 +151,16 @@ users:
 ```	
 	
 	
-Before this,please ensure whether the kubectl command should be run from those machines : 
-
+### Before this,please ensure whether the kubectl command should be run from those machines : 
+```
 # sudo apt update 
 # sudo snap install kubectl --classic					//install kubectl 
 # export KUBECONFIG=/app/user-general.yaml				//export the config file in those machines 
-	
+```	
 
 	
-Now check the necessary access after login to the machine: 
+### Now check the necessary access after login to the machine: 
 
-
-kubectl auth can-i delete pods
+`kubectl auth can-i delete pods`
+`O/P: Yes/No` 
 
