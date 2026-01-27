@@ -1,7 +1,8 @@
-From Master Node, Create three serviceAccountn, ClusterRole, ClusterRoleBinding : 
+# From Master Node, Create three serviceAccountn, ClusterRole, ClusterRoleBinding : 
 
 
-'''vi admin.yaml'''
+'vi admin.yaml'
+
 '''
 apiVersion: v1
 kind: ServiceAccount
